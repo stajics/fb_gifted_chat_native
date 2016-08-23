@@ -18,7 +18,7 @@ const {
 } = FBSDK;
 
 export default   class LoginScreen extends Component {
-  render() {
+    render() {
     return (
       <View>
         <LoginButton
@@ -29,7 +29,7 @@ export default   class LoginScreen extends Component {
                 alert("login has error: " + result.error);
               } else if (result.isCancelled) {
               } else {
-                Actions.chat();
+		              Actions.chat();
               }
             }
           }
